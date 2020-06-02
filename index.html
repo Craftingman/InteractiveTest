@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Интерактивный Тест</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="dragNdropTest/dndTest.css">
+	<link rel="stylesheet" href="multipleChoiseTest/mpchStyle.css">
+	<script src="main.js"></script>
+</head>
+<body>
+	<header class="clearfix">
+			<div id="headerContent">
+				<div class="headerColumn">
+					<div class="testIdRound">
+						<p id="testId">1</p>
+					</div>
+					<p id="testName">Фрукты и овощи</p>
+				</div>
+				<div class="HeaderColumn">
+					<div id="testAudio" onclick="playSound()" class="clearfix">
+						<img src="img/audio_img.png" alt="playSound">
+						<p class="testTimerValue">00:00</p>
+					</div>
+				</div>
+				<div class="resultArea headerColumn">
+					<p id="result">0</p>
+					<p>/</p>
+					<p id="maxResult">100</p>
+					<img src="img/leaf.png" alt="leaf">
+				</div>
+			</div>
+		<div class="progressBar">
+			<div id="progressBarInner" class="clearfix"></div>
+		</div>
+	</header>
+	<section class="mainArea">
+		<div class="container testArea">
+				<div id="testDescription">Привет, юный академик! Готов пройти задание?<br> Тогда нажми на картинку и переходи дальше, я объясню что необходимо делать.</div>
+				<div id="testTask">
+					<img src="img/start_test_img.png" alt="Start Test" id="startTestImg">
+				</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container clearfix">
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,191 @@
+body {
+	font-family: Arial, sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+
+.container {
+	width: 70vW;
+	margin: 0px auto;
+}
+
+.clearfix:after {
+	content:'';
+	display: table;
+	width: 100%;
+	clear: both;
+}
+
+header {
+	letter-spacing: 0.7px;
+	background: #0a7d27;
+	position: fixed;
+	width: 100vW;
+}
+
+#headerContent {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.headerColumn {
+	display: flex;
+	width: 33.33%;
+}
+
+.testIdRound {
+	float: left;
+	display: inline-block;
+	width: 50px;
+  	height: 50px;
+  	border: 2px solid #006622;
+  	border-radius: 50%;
+  	background: #71f59d;
+	box-sizing: border-box;
+	text-align: center;
+	position: relative;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.testIdRound p {
+	font-size: 35px;
+	color: #006622;
+	font-weight: bold;
+	margin: 0;
+  	transform: translate(-50%, -50%);
+ 	position: absolute; 
+  	top: 50%; 
+  	left: 50%; /*вертикальное выравнивание*/
+}
+
+#testName {
+	display: inline-block;
+	color: white;
+	margin-left: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	
+}
+
+#testAudio {
+	margin: 0px 0px 0px 0px;
+	float: left;
+	padding: 5px;
+	background: #6e9e60;
+	border-radius: 50%;
+	position: relative;
+	width: 45px;
+	height: 45px;
+}
+
+#testAudio img{
+	margin: 0px 0px 0px 0px;
+	width: 45px;
+	height: 45px;
+}
+
+#testAudio:hover{
+	background: #b3ffc6;
+}
+
+#testAudio p{
+	display: none;
+	margin: 0px;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+
+	font-size: 30px;
+	position: absolute;
+	top: 20px;
+	left: 50px;
+}
+
+.resultArea {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.resultArea p{
+	font-weight: bold;
+	font-size: 25px;
+	display: inline-block;
+	color: white;
+}
+
+.resultArea img {
+	position: relative;
+	width: 40px;
+	height: 40px;
+}
+
+.mainArea {
+	background: url(../img/test_background1.jpg) center top;
+	min-height: 100vh;
+	min-width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#testDescription {
+	margin-top: 10vH;
+	font-size: 20px;
+	line-height: 30px;
+	padding: 15px;
+	text-align: center;
+	color: #006622;
+	font-weight: bold;
+	background: #71f59d;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	border-radius: 4px;
+}
+
+#startTestImg {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+}
+
+
+#startTestImg:hover {
+	border-radius: 50%;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	width: 200px;
+	height: 200px;
+}
+
+.testArea {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	height: 65vh;
+}
+
+#testTask {
+	display: inline-flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-around;
+}
+.progressBar {
+	display: flex;
+	height: 10px;
+	background: #71f59d;
+}
+
+#progressBarInner {
+	height: 100%;
+	background: #3c421a;
+	width: 0px;
+}
+
+@media screen and (max-width: 770px) {
+	#testName {
+		display: none;
+	}
+}

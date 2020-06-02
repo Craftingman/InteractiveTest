@@ -1,0 +1,49 @@
+#mpchTestContainer {
+	padding: 15px;
+	width: 500px;
+	display: inline-flex;
+	flex-wrap: wrap;
+	border: 2px solid #006622;
+	background: white;
+	flex-direction: column;
+	border-radius: 5px;
+	align-items: center;
+	justify-content: space-around;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.chooseArea {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 150px;
+	height: 150px;
+	border-radius: 4px;
+	margin-bottom: 5px;
+}
+
+.chooseArea img{
+	width: 100px;
+	height: 100px;
+}
+
+.mpchRow {
+
+}
+
+@media screen and (max-width: 770px) {
+	.chooseArea img{
+	width: 75px;
+	height: 75px;
+	}
+
+	.chooseArea {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 85px;
+	height: 85px;
+	border-radius: 4px;
+	margin-bottom: 5px;
+	}
+}
